@@ -1,0 +1,118 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+/*
+ * http://docs.angularjs.org/api/ng/directive/ngShow#usage_animations
+ */
+.list .item.item-accordion {
+  line-height: 38px;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: 0.09s all linear;
+}
+.list .item.item-accordion.ng-hide {
+  line-height: 0px;
+}
+.list .item.item-accordion.ng-hide-add,
+.list .item.item-accordion.ng-hide-remove {
+  display: block !important;
+}
+
+ul {
+	list-style-type: disc;
+	
+}
+
+p#p01 {
+	border : 1px solid black;
+	padding : 10px;
+	margin: 30px;
+	font-style: italic;
+}
+
+p#p02{
+  overflow-x:auto;
+}
+
+.header .col {
+    background-color:lightgreen;
+}
+
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+
+.textoverpic {
+  background: url(../img/splash.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  max-width: 100%;
+  max-height : 100%;
+  opacity: 0.4;
+  margin : auto;
+  z-index: -2;
+  position: relative;
+}
+
+#map {
+  height: 90%;
+  width:100%;
+}
+
+#container {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.scroll {
+  height : 100%;
+}
+
+#container::after {
+  content: '';
+  background-image: 0xffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 30px; right: 0; bottom: 0; left: 0;
+  opacity: 0.5;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 1.0);
+}
+
+.parent {
+  position: absolute;
+  top: 0px; right: 0; bottom: 0; left: 0;
+  height: 100%;
+  width : 100%;
+  font-size: 14px;
+  display: flex;
+  background-size: cover;
+}
+
+.centered {
+  margin: auto;
+  color: white;
+}
+

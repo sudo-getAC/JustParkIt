@@ -1,0 +1,30 @@
+<ion-view title="Signup" id="page3">
+    <ion-nav-bar class="bar-calm">
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content overflow-scroll="true" padding="true" class="has-header" style="background-color:#6ab9ec">
+        <div class="spacer" style="width:285px;height:25%;"></div>
+        <form class="list">
+            <ion-list>
+                <label class="item item-input" style="background-color:transparent">
+                    <input type="text" placeholder="Name" ng-model="data.username">
+                </label>
+                <label class="item item-input" style="background-color:transparent">
+                    <input type="text" placeholder="example@domain.com" ng-model="data.email">
+                </label>
+                <label class="item item-input" style="background-color:transparent">
+                    <input type="password" placeholder="password" ng-model="data.password">
+                </label>
+            </ion-list>
+            <button class="button button-stable button-block" ng-click="signupEmail()" style="color:#6ab9ec">Sign Up</button>
+        </form>
+        <div style="position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  color:white;">&copy;<strong>sudo-get_AC</strong></div>
+    </ion-content>
+</ion-view>
